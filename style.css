@@ -145,6 +145,21 @@ p {
     flex: 2 1 200px;
 }
 
+.leftovervariables {
+    object-fit: contain;
+    padding: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+    font-size: 36px;
+    flex: 2 1 200px;
+    flex-wrap: wrap;
+    object-position: left;
+    object-fit: contain;
+}
+
+
+
 .resume {
     object-fit: contain;
     padding: 50px;
