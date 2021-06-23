@@ -96,7 +96,7 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2a607c;
     color: #ffffff;
-    font-size: 36px;
+    font-size: 80px;
     flex: 2 1 400px;
     ;
     }
@@ -137,7 +137,7 @@ p {
     max-height: 250px;;
     font-family:bold;'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #010005;
-    font-size: 25px;
+    font-size: 45px;
     background-image: url("./images/comingsoon.jfif");
     background-repeat: repeat;
     background-size: content-box;
@@ -154,8 +154,8 @@ p {
     font-size: 36px;
     flex: 2 1 200px;
     flex-wrap: wrap;
-    object-position: left;
     object-fit: contain;
+    width:100%"    
 }
 
 
@@ -190,9 +190,15 @@ p {
     flex-wrap: wrap;
 }
 
+.leftovervariables img {
+    max-height: 200px;
+    object-fit: inherit;
+    flex: 2 1 200px;  
+}
 
 .coming-soon img {
     max-height: 200px;
+    object-fit: contain;
     flex: 2 1 200px;
 }
 
@@ -225,27 +231,13 @@ p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align:center;
     align-content:center;
+    position: fixed bottom;
+    bottom: 0;
+    
 }
 
 .footer h2 {
     font-size: 20px;
 }
 
-/* large devices (laptops etc) */
-@media screen and (max-width: 768px){
-    .card-footer{
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    .recipe-save-button{
-        margin: 10px 0px 10px;
-    }
-}
-
-/* extra large devices (desktops etc) */
-@media screen and (min-width: 992px){
-    #groceryListContainer{
-        width: 60%;
-    }
-}
