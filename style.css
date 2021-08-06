@@ -1,151 +1,180 @@
-* 
-{
-    box-sizing:border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color: #d9dcd6;
+  background-color: #0b2c3d;
 }
 
 .header {
-    display: flex;
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #0b2c3d;
-    color: #ffffff;
-    flex-wrap: wrap
-;
+  display: flex;
+  padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #0b2c3d;
+  color: #ffffff;
+  flex-wrap: wrap;
 }
 
 nav {
-    display: flex;
-    flex-wrap: wrap;
-    /* Align the child elements to the right side of the parent */
-    justify-content: flex-end;
-    background-color: #0b2c3d;
-  }
-
-.header h1 {
-    display: inline-block;
-    float: left;
-    font-size: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  /* Align the child elements to the right side of the parent */
+  justify-content: flex-end;
+  background-color: #0b2c3d;
 }
 
+.header h1 {
+  display: inline-block;
+  float: left;
+  font-size: 48px;
+}
 
 .header div {
-    padding-top: 25px;
-    margin-right: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+  padding-top: 25px;
+  margin-right: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
 }
 
 .header div ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .header div ul li {
-    display: inline-block;
-    float: right;
-    margin-left: 25px;
+  display: inline-block;
+  float: right;
+  margin-left: 25px;
 }
 
-
 a {
-    color: #ffffff;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .title {
-    height: 200px;
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 25px;
-    padding: 50px;
-    background-image: url("./images/computer_programming.jpg");
-    background-size: cover;
-    background-position: center;
+  height: 200px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  padding: 50px;
+  background-image: url("./images/computer_programming.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .float-left {
-    float: left;
-    margin-right: 25px;
+  float: left;
+  margin-right: 25px;
 }
 
 .float-right {
-    float: right;
-    margin-left: 25px;
+  float: right;
+  margin-left: 25px;
 }
 
 .content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* display: inline-block; */
+}
+section {
+  margin: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #2a607c;
+  color: #ffffff;
+
+  /* @media screen and (max-width: 300px)  {
+       margin: 5px;
+    } */
+}
+#work {
+  object-fit: contain;
+  margin-bottom: 20px;
+  padding: 50px;
+  font-size: 36px;
+  flex: 2 1 200px;
+  flex-wrap: wrap;
+}
+#work > div.project {
+  display: flex;
+  width: 100%;
+}
+/* project first column */
+#work > div.project > div:first-of-type {
+  /* width: 30%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* links in project */
+#work > div.project > div:first-of-type > div {
+    display: flex;
+    flex-direction: column;
+}
+/* project second column */
+#work > div.project > div:nth-of-type(2) {
+  /* width: 70%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+.leftovervariables img {
+  max-width: 300px;
+  align-self: flex-end;
+  /* object-fit: inherit; */
+  /* flex: 2 1 200px; */
+}
 
-.about-me {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
-    font-size: 80px;
-    flex: 2 1 400px;
-    ;
-    }
-
-
-.work { 
-    object-fit: contain;
-    margin-bottom: 20px;
-    padding: 50px
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
-    font-size: 36px;
-    flex: 2 1 200px;
-    flex-wrap: wrap;
+#about-me {
+  margin-bottom: 20px;
+  padding: 50px;
+  /* height: 300px; not the most responsive styling */
+  font-size: 80px;
+  flex: 2 1 400px;
 }
 
 .calculator {
-   
-    margin: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ffffff;
-    font-size: 100px;
-    background-image: url("./images/download.jfif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    flex: 2 1 200px;
-    flex-wrap: wrap;
+  margin: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffffff;
+  font-size: 100px;
+  background-image: url("./images/download.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex: 2 1 200px;
+  flex-wrap: wrap;
 }
 
 .coming-soon {
-    display: inline-block;
-    margin: 20px;
-    padding: 50px;
-    max-height: 250px;;
-    font-family:bold;'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #010005;
-    font-size: 45px;
-    background-image: url("./images/comingsoon.jfif");
-    background-repeat: repeat;
-    background-size: content-box;
-    border: 50px rgb(0, 0, 8);
-    flex: 2 1 200px;
+  display: inline-block;
+  margin: 20px;
+  padding: 50px;
+  max-height: 250px;
+  font-family: bold, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  color: #010005;
+  font-size: 45px;
+  background-image: url("./images/comingsoon.jfif");
+  background-repeat: repeat;
+  background-size: content-box;
+  border: 50px rgb(0, 0, 8);
+  flex: 2 1 200px;
 }
 
-.leftovervariables {
+/* .leftovervariables {
     object-fit: contain;
     padding: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -156,88 +185,74 @@ p {
     flex-wrap: wrap;
     object-fit: contain;
     width:100%"    
-}
-
-
+} */
 
 .resume {
-    object-fit: contain;
-    padding: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
-    font-size: 36px;
-    flex: 2 1 200px;
-    flex-wrap:wrap;
-    object-position: inherit;
+  object-fit: contain;
+  padding: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #2a607c;
+  color: #ffffff;
+  font-size: 36px;
+  flex: 2 1 200px;
+  flex-wrap: wrap;
+  object-position: inherit;
 }
 
 .contact-me {
-
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 125px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
-    font-size: 36px;
-   
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 125px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #2a607c;
+  color: #ffffff;
+  font-size: 36px;
 }
 .calculator img {
-    max-height: 250px;
-    flex: 2 1 200px;
-    object-fit: contain;
-    flex-wrap: wrap;
-}
-
-.leftovervariables img {
-    max-height: 200px;
-    object-fit: inherit;
-    flex: 2 1 200px;  
+  max-height: 250px;
+  flex: 2 1 200px;
+  object-fit: contain;
+  flex-wrap: wrap;
 }
 
 .coming-soon img {
-    max-height: 200px;
-    object-fit: contain;
-    flex: 2 1 200px;
+  max-height: 200px;
+  object-fit: contain;
+  flex: 2 1 200px;
 }
 
 .resume img {
-    height: 200px;
-    flex: 2 1 200px;
-    object-fit:inherit ;
+  height: 200px;
+  flex: 2 1 200px;
+  object-fit: inherit;
 }
 
 .about-me h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+  margin-bottom: 20px;
+  font-size: 36px;
 }
 
 .about-me img {
-    max-height: 200px;
-    flex: 2 1 200px;
+  max-height: 200px;
+  flex: 2 1 200px;
 }
-
-
 
 .resume h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+  margin-bottom: 20px;
+  font-size: 36px;
 }
 
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align:center;
-    align-content:center;
-    position: fixed bottom;
-    bottom: 0;
-    
+footer {
+  padding: 30px;
+  clear: both;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  align-content: center;
+  position: fixed bottom;
+  bottom: 0;
 }
 
 .footer h2 {
-    font-size: 20px;
+  font-size: 20px;
 }
-
-
