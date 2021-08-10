@@ -83,7 +83,6 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  /* display: inline-block; */
 }
 section {
   margin: 20px;
@@ -91,58 +90,29 @@ section {
   background-color: #2a607c;
   color: #ffffff;
 
- /* @media screen and (max-width: 300px)  {
+  /* @media screen and (max-width: 300px)  {
        margin: 5px;
     } */
 }
-#work {
-  object-fit: contain;
-  margin-bottom: 20px;
-  padding: 50px;
-  font-size: 36px;
-  flex: 2 1 200px;
-  flex-wrap: wrap;
+section > h3 {
+  font-size: 2rem;
 }
 #work > div.project {
-  display: flex;
   width: 100%;
-}
-/* project first column */
-#work > div.project > div:first-of-type {
-  /* width: 30%; */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-/* links in project */
-#work > div.project > div:first-of-type > div {
-    display: flex;
-    flex-direction: column;
-}
-/* project second column */
-#work > div.project > div:nth-of-type(2) {
-  /* width: 70%; */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding: 20px 0px;
 }
 
 .leftovervariables img {
   max-width: 300px;
   align-self: flex-end;
-  /* object-fit: inherit; */
-  /* flex: 2 1 200px; */
 }
 
 #about-me {
   margin-bottom: 20px;
   padding: 50px;
-  /* height: 300px; not the most responsive styling */
   font-size: 80px;
   flex: 2 1 400px;
 }
-
-
 
 .coming-soon {
   display: inline-block;
@@ -160,19 +130,6 @@ section {
   flex: 2 1 200px;
 }
 
-/* .leftovervariables {
-    object-fit: contain;
-    padding: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
-    font-size: 36px;
-    flex: 2 1 200px;
-    flex-wrap: wrap;
-    object-fit: contain;
-    width:100%"    
-} */
-
 .resume {
   object-fit: contain;
   padding: 50px;
@@ -188,7 +145,6 @@ section {
 .contact-me {
   margin-bottom: 20px;
   padding: 50px;
-  height: 125px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #2a607c;
   color: #ffffff;
