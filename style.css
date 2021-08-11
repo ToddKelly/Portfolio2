@@ -94,8 +94,8 @@ section {
        margin: 5px;
     } */
 }
-section > h3 {
-  font-size: 2rem;
+div.project>div> h3 {
+  font-size: 3rem;
 }
 #work > div.project {
   width: 100%;
