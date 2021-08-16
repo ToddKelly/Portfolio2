@@ -2,8 +2,7 @@
 
 ### This is an updated portfolio.
 
-This updated portfolio contains a link to the first project (The Left OVer Variables) which I participated in as part of the Carleton University's Boot Camp. 
+This is my proffesional portfolio with will be developing as I grow in my career and my skills.
 
-Added mobile responsiveness and the removed placeholder apps. 
-
-Fixed items suggested as per first academic markers suggestions
+Here is the link to the [deployed application](https://toddkelly.github.io/ToddKelly_Portfolio2/)
+![Screenshot](./images/deployed.png)
